@@ -3,6 +3,10 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+a{
+	text-decoration: none;
+	color: inherit;
+}
 h1{
 	font-family: 'Poppins', sans-serif;
 	font-weight: 600;
@@ -38,7 +42,7 @@ header{
 	width: 90%;
 	margin: auto;
 }
-header img{
+.logo{
 	width: 35%;
 	height: auto;
 	padding-top: 0.5rem;
@@ -134,38 +138,136 @@ header button{
 	filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(171deg) brightness(109%) contrast(101%);;
 }
 .gridBottom{
-	display:grid;
+	display: grid;
 	grid-template-columns: auto auto;
 	grid-gap: 2rem;
-	column-gap:1.1rem;
+	column-gap: 1.1rem;
 
 }
 .gridBottom img{
 	padding-left: 1.3rem;
 }
 .gridBottom p{
-	color:#fff;
-	width:81%;
+	color: #fff;
+	width: 81%;
 }
 .bottomNav{
-	color:#fff;
-	padding-top:2rem;
-	padding-left:1.3rem;
+	color: #fff;
+	padding-top: 2rem;
+	padding-left: 1.3rem;
 	list-style: none;
 	line-height: 2.5rem;
 	font-family: 'Open Sans', sans-serif;
-	font-size:1.3rem;
+	font-size: 1.3rem;
 }
 .bottomNav li{
 	cursor: pointer;
 }
 footer{
-	font-size:0.7rem;
+	font-size: 0.7rem;
 	font-family: 'Open Sans', sans-serif;
 	color: #fff;
-	padding-top:4rem;
+	padding-top: 4rem;
 	padding-bottom: 1rem;
 	text-align: center;
+}
+@media (min-width: 1024px){
+	h1{
+		font-size: 2rem;
+		line-height: 3rem;
+	}
+	h2{
+		font-size: 1rem;
+	}
+	h3{
+		font-size: 1.8rem;
+	}
+	p{
+		line-height: 1.4rem;
+	}
+	.logo{
+		width: 18%;
+	}
+	header button{
+		margin-top: 0.5rem;
+		height: 3rem;
+		width: 12rem;
+		font-size: 1.05rem;
+	}
+	.background{
+		background-image: url('../images/bg-hero-desktop.svg');
+		background-size: cover;
+		margin-bottom: 7rem;
+	}
+	.firstSection{
+		flex-direction: row;
+		width: 90%;
+	}
+	.firstSectionText{
+		padding-top: 2.5rem;
+		padding-right: 2.7rem;
+		text-align: left;
+	}
+	.firstImage{
+		height: auto;
+		width: 50%;
+		padding-top: 0rem;
+	}
+	.firstSectionText button{
+		width: 40%;
+		cursor: pointer;
+	}
+	.block{
+		display: flex;
+	}
+	.blockImage{
+		width: 30%
+	}
+	.blockText{
+		height: 50%;
+		width: 50%;
+		margin: auto;
+		text-align: left;
+	}
+	.secondBlock .blockText{
+		order: 1;
+	}
+	.secondBlock .blockImage{
+		order: 2;
+	}
+	.lastBlock{
+		width: 35%;
+	}
+	.lastBlock button{
+		width: 45%;
+		cursor: pointer;
+	}
+	.bottomLogo{
+		padding-left: 4rem;
+		width: 17%;
+	}
+	.bottomNav{
+		display: inline-grid;
+		grid-template-columns: auto auto;
+		grid-gap: 1.3rem 7rem;
+		padding-left: 9.5rem;
+
+	}
+	.gridBottom{
+		display: inline-grid;
+		width: 30%;
+		padding-left: 5rem;
+	}
+	button:hover{
+		transform: scale(1.01);
+	}
+	button:active{
+		transform: scale(0.99);
+	}
+	button:focus{
+		outline: none;
+	}
+	
 }
 
 
